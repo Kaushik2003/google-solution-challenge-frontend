@@ -2,16 +2,17 @@
 
 
 export function Button({
-  title,icon,position,handleClick,otherClasses
-}: {
+  title,icon,position,handleClick,otherClasses}: {
   title: string;
   icon: React.ReactNode;
   position: "left" | "right";
-  handleClick: () => void;
+  handleClick?: () => void;
   otherClasses?: string;
 }) {
+  
+  
   return (
-    <button className="relative inline-flex h-12 overflow-hidden w-full rounded-lg p-[1px]
+    <button  className="relative inline-flex h-12 overflow-hidden w-full rounded-lg p-[1px]
   focus:outline-none md:mt-10">
   
   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] 
