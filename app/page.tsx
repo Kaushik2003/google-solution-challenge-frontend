@@ -1,11 +1,14 @@
-import Image from "next/image";
+
+import Mainpage from "./components/Mainpage";
+;
+
+
 
 export default function Home() {
   return (
-   <main className="relative">
-    <div>
-      <h1>Hello</h1>
-    </div>
-   </main>
+    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <Mainpage></Mainpage>
+    </main>
   );
 }
+//
